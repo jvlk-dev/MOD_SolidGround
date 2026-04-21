@@ -1,5 +1,7 @@
 # Solid Ground (Minecraft Forge 1.20.1)
 Solid Ground is a gameplay-altering mod that introduces mining exhaustion mechanic and depth-dependent block hardness to Minecraft.
+- Modrinth - https://modrinth.com/mod/solid-ground
+- Curseforge - https://curseforge.com/minecraft/mc-mods/solid-ground
 
 # 🛠 Features
 - Fatigue System: Uses a HashMap-based tracking system to apply a BreakSpeed penalty that grows as the player breaks whitelisted blocks.
