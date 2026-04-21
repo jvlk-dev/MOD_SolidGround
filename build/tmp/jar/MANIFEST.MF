@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: solidground
+Specification-Vendor: Inertis
+Specification-Version: 1
+Implementation-Title: SolidGround
+Implementation-Version: 1.0.0
+Implementation-Vendor: Inertis
+Implementation-Timestamp: 2025-12-20T19:23:33+0100
+
