@@ -1,0 +1,35 @@
+
+["SolidGround Configuration"]
+	#List of block IDs affected by the mining fatigue (e.g. minecraft:stone)
+	Whitelist = ["minecraft:stone", "minecraft:deepslate", "minecraft:tuff", "minecraft:granite", "minecraft:diorite", "minecraft:andesite"]
+
+	["SolidGround Configuration"."Fatigue Mechanics"]
+		#How much fatigue is added when breaking one block.
+		#Range: 0.0 ~ 1000.0
+		FatigueAddedPerBlock = 10.0
+		#How much fatigue is recovered per tick (20 ticks = 1 second).
+		#Range: 0.0 ~ 100.0
+		FatigueDecayPerTick = 0.05
+		#The maximum amount of fatigue a player can accumulate.
+		#Range: 1.0 ~ 10000.0
+		MaxFatigueCap = 100.0
+		#Determines how harsh the fatigue slowdown is. Higher number = Less penalty.
+		#Range: 0.1 ~ 1000.0
+		PenaltyScalingFactor = 10.0
+
+	["SolidGround Configuration"."Depth Scaling"]
+		#Defines how much harder blocks become based on Y-level.
+		#Hardness adds to the mining time. 0.5 = 50% harder, 1.0 = 100% harder (half speed), etc.
+		#Range: -64 ~ 320
+		Y_Level_Surface = 66
+		#Range: 0.0 ~ 100.0
+		Hardness_At_Surface = 0.5
+		#Range: -64 ~ 320
+		Y_Level_Deepslate_Start = 8
+		#Range: 0.0 ~ 100.0
+		Hardness_At_Deepslate_Start = 1.0
+		#Range: -64 ~ 320
+		Y_Level_Bedrock = -64
+		#Range: 0.0 ~ 100.0
+		Hardness_At_Bedrock = 2.0
+
