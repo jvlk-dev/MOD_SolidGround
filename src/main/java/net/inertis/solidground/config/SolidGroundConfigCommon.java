@@ -62,13 +62,19 @@ public class SolidGroundConfigCommon {
         BUILDER.comment("Defines how much harder blocks become based on Y-level.",
                 "Hardness adds to the mining time. 0.5 = 50% harder, 1.0 = 100% harder (half speed), etc.");
 
-        Y_LEVEL_SURFACE = BUILDER.defineInRange("Y_Level_Surface", 66, -2048, 2048);
+        Y_LEVEL_SURFACE = BUILDER
+                .comment("At this height, hardness starts to increase. Default 66.")
+                .defineInRange("Y_Level_Surface", 66, -2048, 2048);
         HARDNESS_AT_SURFACE = BUILDER.defineInRange("Hardness_At_Surface", 0.5, 0.0, 100.0);
 
-        Y_LEVEL_DEEPSLATE_START = BUILDER.defineInRange("Y_Level_Deepslate_Start", 8, -2048, 2048);
+        Y_LEVEL_DEEPSLATE_START = BUILDER
+                .comment("At this height, we hit the second tier of hardness. Default 8.")
+                .defineInRange("Y_Level_Deepslate_Start", 8, -2048, 2048);
         HARDNESS_AT_DEEPSLATE_START = BUILDER.defineInRange("Hardness_At_Deepslate_Start", 1.0, 0.0, 100.0);
 
-        Y_LEVEL_BEDROCK = BUILDER.defineInRange("Y_Level_Bedrock", -64, -2048, 2048);
+        Y_LEVEL_BEDROCK = BUILDER
+                .comment("At this height, we hit the maximum hardness. Default -64.")
+                .defineInRange("Y_Level_Bedrock", -64, -2048, 2048);
         HARDNESS_AT_BEDROCK = BUILDER.defineInRange("Hardness_At_Bedrock", 2.0, 0.0, 100.0);
         BUILDER.pop();
 
